@@ -1,4 +1,4 @@
-def ejercicio1DECP1():
+def ejercicio1DECP():
     
   #inicio
   print("Buenos dias estimado alumno")
@@ -31,12 +31,12 @@ def ejercicio1DECP1():
   #Datos de salida
   print("Entonces tu nota final es:",notafinal)
 
-#ejercicio1DECP1()
+#ejercicio1DECP()
 
-def ejercicio1DECP2():
+def ejercicio2DECP():
   print("Buen dia")
   #Variables
-
+  bonofinal=0
   salariomin=930
   #Datos de entrada
   puntos=int(input("Ingrese los puntos que obtuvo por su desempeño laboral:" ))
@@ -48,13 +48,15 @@ def ejercicio1DECP2():
     bonofinal=salariomin*0.40
   elif puntos>=151:
     bonofinal=salariomin*0.70
+  else:
+    print("Estimado Docente, le pido que ponga mas esfuerzo a su labor" )
 
   #Datos de salida
   print(f"Su bono es de: ${bonofinal:.2f}")
 
-#ejercicio1DECP2()
+#ejercicio2DECP()
 
-def ejercicio1DECP3():
+def ejercicio3DECP():
   print("Buen dia. Bienvenido al programa de vacunción por parte del Misnisterio de Salud, este programa esta vinculado al marco del Covid-19, porfavor siga instrucciones y posteorimente se le dira que vacuna recibirá")
   #Variables
   vacuna1="A"
@@ -75,9 +77,9 @@ def ejercicio1DECP3():
   #Datos de salida
   print("La vacuna que se le administrara es tipo ",VacunaFi)
 
-#ejercicio1DECP3()
+#ejercicio3DECP()
 
-def ejercicio1DECP4():
+def ejercicio4DECP():
   print("Hola humano")
   print("Ingrese solamente dos numeros")
   #Variables
@@ -85,7 +87,7 @@ def ejercicio1DECP4():
   #Datos de entrada
   num1=int(input("Ingres el primer numero:"))
   num2=int(input("Ingrese el segundo numero:"))
-  opcion=input("Hey humano elije que operacion quieres que haga:\nS s=Suma\nR r=Resta\nM m=Multplicacion\nD d=Divicion\n")
+  opcion=input("Hey humano elije que operacion quieres que haga:\ns=Suma\nr=Resta\nm=Multplicacion\nd=Divicion\n")
   #Proceso
   opcion=opcion.lower()
   if opcion=="s":
@@ -97,15 +99,13 @@ def ejercicio1DECP4():
   if opcion=="d":
     if num2!=0:
       res=num1/num2
-  else:
-    print("Elije bien pues humano, no seas paltas")
 
   #Datos de salida
   print(f"Aqui esta tu resultado humano: {res}")
 
-#ejercicio1DECP4()
+#ejercicio4DECP()
 
-def ejercicio1DECP5():
+def ejercicio5DECP():
   #Variables
   prueba=0
 
@@ -114,17 +114,17 @@ def ejercicio1DECP5():
   opcion=input("Ingrese el algoritmo que quiere probrar:\n1=ejercicio1DECP1\n2=ejercicio1DECP2\n3=ejercicio1DECP3\n4=ejercicio1DECP4\n")
   #Proceso
   if opcion=="1":
-    prueba=ejercicio1DECP1()
+    prueba=ejercicio1DECP()
   if opcion=="2":
-    prueba=ejercicio1DECP2()
+    prueba=ejercicio2DECP()
   if opcion=="3":
-    prueba=ejercicio1DECP3()
+    prueba=ejercicio3DECP()
   if opcion=="4":
-    prueba=ejercicio1DECP4()
+    prueba=ejercicio4DECP()
   #Datos de salida
 print("Tu algoritmo de prueba es:")
 
-ejercicio1DECP5()
+ejercicio5DECP()
 
 
 
